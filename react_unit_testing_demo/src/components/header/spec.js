@@ -13,8 +13,8 @@ describe('Header Component', () => {
 
   test('Should render without errors', () => {
     // console.log(component.debug());
-    const wrapper = findByTestAttr(component, 'headerComponent');
-    expect(wrapper.length).toBe(1);
+    const headerComponent = findByTestAttr(component, 'headerComponent');
+    expect(headerComponent.length).toBe(1);
   });
 
   test('Should render a logo', () => {

@@ -1,3 +1,1 @@
-export const types = {
-  GET_POSTS: 'getPosts'
-};
+export const GET_POSTS = 'GET_POSTS';

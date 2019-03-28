@@ -1,4 +1,4 @@
-import { types } from '../../actions/types';
+import { GET_POSTS } from '../../actions/types';
 import postReducer from './reducer';
 
 describe('Post Reducer', () => {
@@ -10,7 +10,7 @@ describe('Post Reducer', () => {
   test('Should return new state if receive type', () => {
     const posts = [{ title: 'test1' }, { title: 'test2' }, { title: 'test3' }];
     const newState = postReducer(undefined, {
-      type: types.GET_POSTS,
+      type: GET_POSTS,
       payload: posts
     });
     expect(newState).toEqual(posts);
